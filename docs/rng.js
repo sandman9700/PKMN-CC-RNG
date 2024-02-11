@@ -1,5 +1,6 @@
 var fighters = 12, p1, p2, color1, color2, r = document.querySelector(':root');
 
+$( document ).ready(function() {
 $("button").click(function () {
     let r1 = Math.floor(Math.random() * fighters) + 1, r2 = Math.floor(Math.random() * fighters) + 1;
 
@@ -105,6 +106,7 @@ $("button").click(function () {
     display(p1, p2);
 
     console.log(p1, p2)
+});
 });
 
 function display(p1, p2) {
