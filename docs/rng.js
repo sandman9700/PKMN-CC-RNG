@@ -106,6 +106,14 @@ $("button").click(function () {
     display(p1, p2);
 
     console.log(p1, p2)
+
+    const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('p1', p1);
+        urlParams.set('p2', p2);
+        history.pushState(null, '', '?' + urlParams.toString());
+
+        console.log(p1, p2)
+    
 });
 });
 
