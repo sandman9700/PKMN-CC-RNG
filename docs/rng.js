@@ -7,16 +7,19 @@ $(document).ready(function () {
     const p1FromURL = urlParams.get('p1');
     const p2FromURL = urlParams.get('p2');
 
-    //p1 = p1FromURL || "primeape";
-    //p2 = p2FromURL || "blaziken";
+    p1 = p1FromURL || "primeape";
+    p2 = p2FromURL || "blaziken";
 
 if (p1FromURL == null){
     p1 = "primeape"
-}   
+} else {
+    p1 = p1FromURL
+}
 if (p2FromURL == null){
     p2 = "blaziken"
+} else {
+    p2 = p2FromURL
 }
-    
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
