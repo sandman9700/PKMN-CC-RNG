@@ -20,7 +20,7 @@ if (p2FromURL == null){
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
-});
+
     $("button").click(function () {
         r1 = Math.floor(Math.random() * fighters) + 1, r2 = Math.floor(Math.random() * fighters) + 1;
 
@@ -112,7 +112,7 @@ if (p2FromURL == null){
         console.log(p1, p2)
 
     });
-
+});
 
 function display(p1, p2) {
     switch (p1) {
