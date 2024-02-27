@@ -7,12 +7,20 @@ $(document).ready(function () {
     const p1FromURL = urlParams.get('p1');
     const p2FromURL = urlParams.get('p2');
 
-    p1 = p1FromURL || "primeape";
-    p2 = p2FromURL || "blaziken";
+    //p1 = p1FromURL || "primeape";
+    //p2 = p2FromURL || "blaziken";
+
+if (p1FromURL == null){
+    p1 = "primeape"
+}   
+if (p2FromURL == null){
+    p2 = "blaziken"
+}
+    
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
-
+});
     $("button").click(function () {
         r1 = Math.floor(Math.random() * fighters) + 1, r2 = Math.floor(Math.random() * fighters) + 1;
 
@@ -104,7 +112,7 @@ $(document).ready(function () {
         console.log(p1, p2)
 
     });
-});
+
 
 function display(p1, p2) {
     switch (p1) {
