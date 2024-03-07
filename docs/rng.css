@@ -71,12 +71,12 @@ body{
 }
 
 a {
-  color: blue;
-  text-decoration: underline;
+  color: blue !important;
+  text-decoration: underline !important;
 }
 
 a:hover {
-    color: darkslateblue;
-    text-decoration: underline;
-    cursor: pointer;
+    color: darkslateblue !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
 }
