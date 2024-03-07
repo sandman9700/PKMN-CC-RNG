@@ -190,7 +190,7 @@ function display(p1, p2) {
     let names = "";
     img1 += "<img src=\"Assets/" + p1 + ".png\" alt=\"" + p1 + "\">"
     img2 += "<img src=\"Assets/" + p2 + ".png\" alt=\"" + p2 + "\">"
-    names += "<h3 class=\"vs\">" + p1.replace("%20", " ") + " vs. " + p2.replace("%20", " ") + "</h3>"
+    names += "<h3 class=\"vs\">" + p1.replace("%2520", " ") + " vs. " + p2.replace("%2520", " ") + "</h3>"
     document.getElementById("p1").innerHTML = img1;
     document.getElementById("p2").innerHTML = img2;
     document.getElementById("names").innerHTML = names;
