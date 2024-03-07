@@ -109,7 +109,7 @@ $(document).ready(function () {
 function display(p1, p2) {
     switch (p1) {
         case "primeape":
-            color1 = "#FFEADC";
+            color1 = "#8d6457";
             break;
         case "heracross":
             color1 = "#4B78B1";
@@ -148,7 +148,7 @@ function display(p1, p2) {
 
     switch (p2) {
         case "primeape":
-            color2 = "#FFEADC";
+            color2 = "#8d6457";
             break;
         case "heracross":
             color2 = "#4B78B1";
