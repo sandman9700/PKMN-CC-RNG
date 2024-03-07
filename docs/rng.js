@@ -81,10 +81,10 @@ $(document).ready(function () {
                 p2 = "falinks";
                 break;
             case 9:
-                p2 = "great%20tusk";
+                p2 = "great tusk";
                 break;
             case 10:
-                p2 = "galarian%20zapdos";
+                p2 = "galarian zapdos";
                 break;
             case 11:
                 p2 = "poliwrath";
@@ -132,10 +132,10 @@ function display(p1, p2) {
         case "falinks":
             color1 = "#e4ca5e";
             break;
-        case "great%20tusk":
-            color1 = "#8ABADB";
+        case "great tusk":
+            color1 = "#8abadb";
             break;
-        case "galarian%20zapdos":
+        case "galarian zapdos":
             color1 = "#ff6153";
             break; 
         case "poliwrath":
@@ -172,7 +172,7 @@ function display(p1, p2) {
             color2 = "#e4ca5e";
             break;
         case "great tusk":
-            color2 = "#8ABADB";
+            color2 = "#8abadb";
             break;
         case "galarian zapdos":
             color2 = "#ff6153";
