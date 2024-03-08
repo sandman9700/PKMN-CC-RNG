@@ -42,10 +42,10 @@ $(document).ready(function () {
                 p1 = "falinks";
                 break;
             case 9:
-                p1 = "great tusk";
+                p1 = "great%20tusk";
                 break;
             case 10:
-                p1 = "galarian zapdos";
+                p1 = "galarian%20zapdos";
                 break;
             case 11:
                 p1 = "poliwrath";
@@ -81,10 +81,10 @@ $(document).ready(function () {
                 p2 = "falinks";
                 break;
             case 9:
-                p2 = "great tusk";
+                p2 = "great%20tusk";
                 break;
             case 10:
-                p2 = "galarian zapdos";
+                p2 = "galarian%20zapdos";
                 break;
             case 11:
                 p2 = "poliwrath";
@@ -97,8 +97,8 @@ $(document).ready(function () {
 
 
         const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('p1', encodeURIComponent(p1).replace("%25", "%"));
-        urlParams.set('p2', encodeURIComponent(p2).replace("%25", "%"));
+        urlParams.set('p1', encodeURIComponent(p1));
+        urlParams.set('p2', encodeURIComponent(p2));
         history.pushState(null, '', '?' + urlParams.toString());
 
         console.log(p1, p2)
@@ -132,10 +132,10 @@ function display(p1, p2) {
         case "falinks":
             color1 = "#e4ca5e";
             break;
-        case "great tusk":
+        case "great%20tusk":
             color1 = "#8abadb";
             break;
-        case "galarian zapdos":
+        case "galarian%20zapdos":
             color1 = "#ff6153";
             break; 
         case "poliwrath":
@@ -171,10 +171,10 @@ function display(p1, p2) {
         case "falinks":
             color2 = "#e4ca5e";
             break;
-        case "great tusk":
+        case "great%20tusk":
             color2 = "#8abadb";
             break;
-        case "galarian zapdos":
+        case "galarian%20zapdos":
             color2 = "#ff6153";
             break; 
         case "poliwrath":
