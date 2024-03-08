@@ -42,10 +42,10 @@ $(document).ready(function () {
                 p1 = "falinks";
                 break;
             case 9:
-                p1 = "great%20tusk";
+                p1 = "great tusk";
                 break;
             case 10:
-                p1 = "galarian%20zapdos";
+                p1 = "galarian zapdos";
                 break;
             case 11:
                 p1 = "poliwrath";
@@ -81,10 +81,10 @@ $(document).ready(function () {
                 p2 = "falinks";
                 break;
             case 9:
-                p2 = "great%20tusk";
+                p2 = "great tusk";
                 break;
             case 10:
-                p2 = "galarian%20zapdos";
+                p2 = "galarian zapdos";
                 break;
             case 11:
                 p2 = "poliwrath";
@@ -97,8 +97,8 @@ $(document).ready(function () {
 
 
         const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('p1', p1);
-        urlParams.set('p2', p2);
+        urlParams.set('p1', encodeURIComponent(p1).replace("%25", "%"));
+        urlParams.set('p2', encodeURIComponent(p2).replace("%25", "%"));
         history.pushState(null, '', '?' + urlParams.toString());
 
         console.log(p1, p2)
@@ -132,10 +132,10 @@ function display(p1, p2) {
         case "falinks":
             color1 = "#e4ca5e";
             break;
-        case "great%20tusk":
+        case "great tusk":
             color1 = "#8abadb";
             break;
-        case "galarian%20zapdos":
+        case "galarian zapdos":
             color1 = "#ff6153";
             break; 
         case "poliwrath":
@@ -171,10 +171,10 @@ function display(p1, p2) {
         case "falinks":
             color2 = "#e4ca5e";
             break;
-        case "great%20tusk":
+        case "great tusk":
             color2 = "#8abadb";
             break;
-        case "galarian%20zapdos":
+        case "galarian zapdos":
             color2 = "#ff6153";
             break; 
         case "poliwrath":
