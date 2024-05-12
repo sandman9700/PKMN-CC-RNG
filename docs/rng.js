@@ -1,4 +1,4 @@
-var fighters = 12, p1, p2, color1, color2, r = document.querySelector(':root');
+var fighters = 14, p1, p2, color1, color2, r = document.querySelector(':root');
 
 $(document).ready(function () {
     // Get the search parameters from the URL
@@ -53,6 +53,12 @@ $(document).ready(function () {
             case 12:
                 p1 = "scrafty";
                 break;
+            case 13:
+                p1 = "medicham";
+                break;
+            case 14:
+                p1 = "breloom";
+                break;
         }
 
         switch (r2) {
@@ -91,6 +97,12 @@ $(document).ready(function () {
                 break;
             case 12:
                 p2 = "scrafty";
+                break;
+            case 13:
+                p2 = "medicham";
+                break;
+            case 14:
+                p2 = "breloom";
                 break;
         }
         display(p1, p2);
@@ -144,6 +156,12 @@ function display(p1, p2) {
         case "scrafty":
             color1 = "#d07048";
             break;
+        case "medicham":
+            color1 = "#fd809f";
+            break;
+        case "breloom":
+            color1 = "#5abd87";
+            break;
         }
 
     switch (p2) {
@@ -182,6 +200,12 @@ function display(p1, p2) {
             break;
         case "scrafty":
             color2 = "#d07048";
+            break;
+        case "medicham":
+            color1 = "#fd809f";
+            break;
+        case "breloom":
+            color1 = "#5abd87";
             break;
         }
         console.log(color1, color2)
