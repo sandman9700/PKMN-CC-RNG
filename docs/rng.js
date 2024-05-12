@@ -202,10 +202,10 @@ function display(p1, p2) {
             color2 = "#d07048";
             break;
         case "medicham":
-            color1 = "#fd809f";
+            color2 = "#fd809f";
             break;
         case "breloom":
-            color1 = "#5abd87";
+            color2 = "#5abd87";
             break;
         }
         console.log(color1, color2)
