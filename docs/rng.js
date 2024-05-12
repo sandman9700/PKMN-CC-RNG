@@ -109,8 +109,8 @@ $(document).ready(function () {
 
 
         const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('p1', encodeURIComponent(p1).replace("%25", "%"));
-        urlParams.set('p2', encodeURIComponent(p2).replace("%25", "%"));
+        urlParams.set('p1', encodeURIComponent(p1));
+        urlParams.set('p2', encodeURIComponent(p2));
         history.pushState(null, '', '?' + urlParams.toString());
 
         console.log(p1, p2)
