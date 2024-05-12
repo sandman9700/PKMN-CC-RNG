@@ -42,10 +42,10 @@ $(document).ready(function () {
                 p1 = "falinks";
                 break;
             case 9:
-                p1 = "great tusk";
+                p1 = "great_tusk";
                 break;
             case 10:
-                p1 = "galarian zapdos";
+                p1 = "galarian_zapdos";
                 break;
             case 11:
                 p1 = "poliwrath";
@@ -87,10 +87,10 @@ $(document).ready(function () {
                 p2 = "falinks";
                 break;
             case 9:
-                p2 = "great tusk";
+                p2 = "great_tusk";
                 break;
             case 10:
-                p2 = "galarian zapdos";
+                p2 = "galarian_zapdos";
                 break;
             case 11:
                 p2 = "poliwrath";
@@ -144,10 +144,10 @@ function display(p1, p2) {
         case "falinks":
             color1 = "#e4ca5e";
             break;
-        case "great tusk":
+        case "great_tusk":
             color1 = "#8abadb";
             break;
-        case "galarian zapdos":
+        case "galarian_zapdos":
             color1 = "#ff6153";
             break; 
         case "poliwrath":
@@ -189,10 +189,10 @@ function display(p1, p2) {
         case "falinks":
             color2 = "#e4ca5e";
             break;
-        case "great tusk":
+        case "great_tusk":
             color2 = "#8abadb";
             break;
-        case "galarian zapdos":
+        case "galarian_zapdos":
             color2 = "#ff6153";
             break; 
         case "poliwrath":
@@ -214,7 +214,7 @@ function display(p1, p2) {
     let names = "";
     img1 += "<img src=\"Assets/" + p1 + ".png\" alt=\"" + p1 + "\">"
     img2 += "<img src=\"Assets/" + p2 + ".png\" alt=\"" + p2 + "\">"
-    names += "<h3 class=\"vs\">" + p1.replace("%20", " ") + " vs. " + p2.replace("%20", " ") + "</h3>"
+    names += "<h3 class=\"vs\">" + p1.replace("_", " ") + " vs. " + p2.replace("_", " ") + "</h3>"
     document.getElementById("p1").innerHTML = img1;
     document.getElementById("p2").innerHTML = img2;
     document.getElementById("names").innerHTML = names;
