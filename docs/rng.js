@@ -7,8 +7,8 @@ $(document).ready(function () {
     const p1FromURL = urlParams.get('p1');
     const p2FromURL = urlParams.get('p2');
 
-    p1 = p1FromURL || "primeape";
-    p2 = p2FromURL || "blaziken";
+    p1 = p1FromURL || "tyrogue";
+    p2 = p2FromURL || "slither_wing";
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
