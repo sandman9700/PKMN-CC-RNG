@@ -59,6 +59,10 @@ $(document).ready(function () {
             case 14:
                 p1 = "breloom";
                 break;
+            case 15:
+                p1 = "tyrogue";
+            case 16:
+                p1 = "slither wing";
         }
 
         switch (r2) {
@@ -104,6 +108,10 @@ $(document).ready(function () {
             case 14:
                 p2 = "breloom";
                 break;
+            case 15:
+                p2 = "tyrogue";
+            case 16:
+                p2 = "slither wing";
         }
         display(p1, p2);
 
@@ -162,6 +170,12 @@ function display(p1, p2) {
         case "breloom":
             color1 = "#5abd87";
             break;
+        case "tyrogue":
+            color1 = "#c8a8b8";
+            break;
+        case "slither_wing":
+            color1 = "#fff9be";
+            break;
         }
 
     switch (p2) {
@@ -206,6 +220,11 @@ function display(p1, p2) {
             break;
         case "breloom":
             color2 = "#5abd87";
+        case "tyrogue":
+            color2 = "#c8a8b8";
+            break;
+        case "slither_wing":
+            color2 = "#fff9be";
             break;
         }
         console.log(color1, color2)
