@@ -2,5 +2,4 @@
 Random character generator for [Pokemon: Close Combat](https://wiki.gbl.gg/w/Pokemon:_Close_Combat)
 
 UPDATE 10:
-- V10 Characters [Medicham](https://wiki.gbl.gg/w/Pokemon:_Close_Combat/Medicham) & [Breloom](https://wiki.gbl.gg/w/Pokemon:_Close_Combat/Breloom) (Join Us) added
-- Finally fixed Great Tusk and Galarian Zapdos Bug
+- V11 Characters [Tyrogue](https://wiki.gbl.gg/w/Pokemon:_Close_Combat/Tyrogue) & [Slither Wing](https://wiki.gbl.gg/w/Pokemon:_Close_Combat/Slither_Wing) added
