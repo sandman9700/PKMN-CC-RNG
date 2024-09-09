@@ -1,4 +1,4 @@
-var fighters = 14, p1, p2, color1, color2, r = document.querySelector(':root');
+var fighters = 16, p1, p2, color1, color2, r = document.querySelector(':root');
 
 $(document).ready(function () {
     // Get the search parameters from the URL
