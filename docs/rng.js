@@ -220,6 +220,7 @@ function display(p1, p2) {
             break;
         case "breloom":
             color2 = "#5abd87";
+            break;
         case "tyrogue":
             color2 = "#c8a8b8";
             break;
