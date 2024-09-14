@@ -61,8 +61,10 @@ $(document).ready(function () {
                 break;
             case 15:
                 p1 = "tyrogue";
+                break;
             case 16:
-                p1 = "slither wing";
+                p1 = "slither_wing";
+                break;
         }
 
         switch (r2) {
@@ -110,8 +112,10 @@ $(document).ready(function () {
                 break;
             case 15:
                 p2 = "tyrogue";
+                break;
             case 16:
-                p2 = "slither wing";
+                p2 = "slither_wing";
+                break;
         }
         display(p1, p2);
 
