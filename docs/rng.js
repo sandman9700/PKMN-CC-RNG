@@ -1,4 +1,4 @@
-var fighters = 16, p1, p2, color1, color2, r = document.querySelector(':root');
+var fighters = 17, p1, p2, color1, color2, r = document.querySelector(':root');
 
 $(document).ready(function () {
     // Get the search parameters from the URL
@@ -7,8 +7,8 @@ $(document).ready(function () {
     const p1FromURL = urlParams.get('p1');
     const p2FromURL = urlParams.get('p2');
 
-    p1 = p1FromURL || "tyrogue";
-    p2 = p2FromURL || "slither_wing";
+    p1 = p1FromURL || "mega_lopunny";
+    p2 = p2FromURL || "tyrogue";
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
@@ -65,6 +65,9 @@ $(document).ready(function () {
             case 16:
                 p1 = "slither_wing";
                 break;
+            case 17:
+               p1 = "mega_lopunny";
+                break;
         }
 
         switch (r2) {
@@ -115,6 +118,9 @@ $(document).ready(function () {
                 break;
             case 16:
                 p2 = "slither_wing";
+                break;
+            case 17:
+                p2 = "mega_lopunny";
                 break;
         }
         display(p1, p2);
@@ -180,6 +186,9 @@ function display(p1, p2) {
         case "slither_wing":
             color1 = "#fff9be";
             break;
+        case "mega_lopunny":
+            color1 = "#a56b63";
+            break;
         }
 
     switch (p2) {
@@ -230,6 +239,9 @@ function display(p1, p2) {
             break;
         case "slither_wing":
             color2 = "#fff9be";
+            break;
+        case "mega_lopunny":
+            color2 = "#a56b63";
             break;
         }
         console.log(color1, color2)
