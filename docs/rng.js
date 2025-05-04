@@ -1,4 +1,4 @@
-var fighters = 17, p1, p2, color1, color2, r = document.querySelector(':root');
+var fighters = 19, p1, p2, color1, color2, r = document.querySelector(':root');
 
 $(document).ready(function () {
     // Get the search parameters from the URL
@@ -7,8 +7,8 @@ $(document).ready(function () {
     const p1FromURL = urlParams.get('p1');
     const p2FromURL = urlParams.get('p2');
 
-    p1 = p1FromURL || "mega_lopunny";
-    p2 = p2FromURL || "tyrogue";
+    p1 = p1FromURL || "passimian";
+    p2 = p2FromURL || "kommo-o";
     console.log(p1, p2);
     console.log(color1, color2)
     display(p1, p2);
@@ -68,6 +68,12 @@ $(document).ready(function () {
             case 17:
                p1 = "mega_lopunny";
                 break;
+            case 18:
+               p1 = "kommo-o";
+                break;
+            case 19:
+               p1 = "passimian";
+                break;
         }
 
         switch (r2) {
@@ -121,6 +127,12 @@ $(document).ready(function () {
                 break;
             case 17:
                 p2 = "mega_lopunny";
+                break;
+            case 18:
+               p2 = "kommo-o";
+                break;
+            case 19:
+               p2 = "passimian";
                 break;
         }
         display(p1, p2);
@@ -189,6 +201,12 @@ function display(p1, p2) {
         case "mega_lopunny":
             color1 = "#a56b63";
             break;
+        case "kommo-o":
+            color1 = "#f9db73";
+            break;
+        case "passimian":
+            color1 = "#d6de73";
+            break;
         }
 
     switch (p2) {
@@ -242,6 +260,12 @@ function display(p1, p2) {
             break;
         case "mega_lopunny":
             color2 = "#a56b63";
+            break;
+        case "kommo-o":
+            color2 = "#f9db73";
+            break;
+        case "passimian":
+            color2 = "#d6de73";
             break;
         }
         console.log(color1, color2)
